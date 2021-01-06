@@ -106,3 +106,6 @@ def start_date(start, end=None):
     temp_dict = {keys[i]: results[i] for i in range(len(keys))}
 
     return jsonify(temp_dict)
+
+if __name__ == "__main__":
+    app.run(debug=True)
