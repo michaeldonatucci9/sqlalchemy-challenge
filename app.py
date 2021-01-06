@@ -28,7 +28,7 @@ class Station(Base):
 
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 conn= engine.connect()
-session = session(sessionmake(bind=engine))
+session = session(bind=engine)
 
 app = Flask(__name__)
 
